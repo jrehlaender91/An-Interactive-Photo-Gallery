@@ -1,0 +1,59 @@
+/* ===================================== 
+   Page Styles
+======================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 1.4em;
+	font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+	color: #6e859c;
+  padding: 0;
+  margin: 0;
+	background: #fff;
+}
+.grid {
+  background: #fff;
+	margin: 0 auto;
+  justify-items: center;
+}
+.item {
+  color: #fff;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.search {
+  max-width: 50%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+input {
+  width: 80%;
+  box-sizing: border-box;
+  padding: 1rem 0rem 1rem .5rem;
+  border: #ccc 2px solid;
+  border-radius: 4px;
+}
+
+
+/* ===================================== 
+   Grid System
+======================================== */
+
+.grid {
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+   /* grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: minmax(200px, 300px) 1fr 1fr;*/
+    /*grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));*/
+    grid-column-gap: 20px;
+}
+
+figcaption {
+  font-weight: normal;
+}
