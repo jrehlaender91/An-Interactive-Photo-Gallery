@@ -30,14 +30,9 @@ let caption = '';
 function updateValue(e) {
     let query = e.target.value.toLowerCase();
 
-    for (let i = 0; i <= 12; i++) {
+    for (let i = 0; i < 12; i++) {
         caption = document.links[i].getAttribute("data-caption").toLowerCase();
         let word = caption.match(query);
-
-
-        console.log(word);
-        console.log(caption);
-        console.log(query);
 
         if (word == null) {
             document.links[i].style.display = "none";
